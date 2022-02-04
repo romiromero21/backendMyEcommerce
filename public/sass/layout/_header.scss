@@ -1,0 +1,190 @@
+/*********************************
+            HEADER
+*********************************/
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked + .nav-bar {
+    display: block;
+}
+
+#menu:checked ~ .search-bar .menu-toggle__label {
+    background-color: #938EBB;
+}
+
+/*********************************
+            NAV BAR
+*********************************/
+.nav-bar {
+    background-color: #938EBB;
+    width: auto;
+    padding: auto;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.nav-bar__nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav-bar__nav-item {
+    text-align: center;
+    background-color:#938EBB; 
+    text-transform: uppercase;
+    
+}
+
+.nav-bar__nav-link {
+    display: block;
+    background-color: #938EBB;
+    padding: 1em 2.5em;
+    text-decoration: none;
+}
+
+
+/*********************************
+            SEARCH BAR
+*********************************/
+.search-bar {
+    background-color: #ded5f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 8px #938EBB;
+    height: 25%;
+
+}
+
+.search-bar__form-container {
+    padding: 3em;
+}
+
+.search-bar__logo-container {
+    background-color: transparent;
+    padding:auto;
+    
+}
+
+.search-bar__form-container {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.search-bar__form-label {
+    width: 25%;
+    color:black;
+    font-family:'Italianno', cursive;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.search-bar__form-search {
+    background-color: #ded5f0;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.search-bar__form-submit {
+    background-color: #ded5f0;
+    height: 30px;
+    border-radius: 5px;
+    font-family:'Italianno', cursive;
+    font-size: 25px;
+}
+
+.search-bar__carrito-container {
+    flex: 0 0 3em;
+    background-image: url(../../img/mas-img/bolsa-de-la-compra-ico.ico);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    margin-right: 15px;
+    align-self:center;
+}
+
+.search_image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+}
+
+.image-header{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*********************************
+            MENU TOGGLE
+*********************************/
+.menu-toggle {
+    display: none;
+    background-color:#A42121;
+    flex: 0 0 3em;
+    position: relative;
+    cursor:pointer;
+}
+
+.menu-toggle__label {
+    display: block;
+    background-color: #ded5f0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-toggle__pan-arriba,
+.menu-toggle__medallon,
+.menu-toggle__pan-abajo {
+    display: block;
+    background-color: #ded5f0;
+    height: .2em;
+    position: absolute;
+    left: .5em;
+    right: .5em;
+    margin: 0 auto;
+}
+
+.menu-toggle__pan-arriba {
+    top: .8em;
+}
+.menu-toggle__medallon {
+    top: 50%;
+    margin-top: -.15em;
+}
+.menu-toggle__pan-abajo {
+    bottom: .8em;
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-direction: column-reverse;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar__nav-list {
+        flex-direction: column;
+    }
+
+}

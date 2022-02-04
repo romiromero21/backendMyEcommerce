@@ -1,0 +1,44 @@
+.section-nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-items{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.item-nosotros{
+    background-color:#938EBB;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+    opacity: 1;
+    transform: translateY(0px);
+    padding: 5 px;
+    margin-top: 2px;
+}
+.title-nosotros{
+    text-align: center; 
+    font-size: 65px;
+    padding: 35px;
+    font-family: 'Italianno', cursive;
+}
+
+h2{
+    font-size: 25px;
+    margin-top: 0;
+    padding: 3px;
+}
+
+.img-nosotros{
+    margin: auto;
+    width: 100%;
+    object-position: 50px 0;
+}
+
+.descrip-nosotros{
+    padding: 15px;
+    text-align: left;
+}
+

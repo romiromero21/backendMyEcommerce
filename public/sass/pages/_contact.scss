@@ -1,0 +1,33 @@
+.section-contacto{
+   text-align: center;
+   font-family: 'Italianno', cursive; 
+   font-size: 55px;
+   padding-top: 30px;
+}
+
+h2{
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.form-contain{
+    text-align: center;
+    padding-top: 40px;
+    line-height: 30px;
+
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 15px;
+    border-bottom: solid 3px black;
+}
+
+.footer__content{
+    background-color:#ded5f0;
+}

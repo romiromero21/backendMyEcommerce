@@ -1,8 +1,8 @@
 .section-contacto{
-   text-align: center;
-   font-family: 'Italianno', cursive; 
-   font-size: 55px;
-   padding-top: 30px;
+    text-align: center;
+    font-family: 'Italianno', cursive; 
+    font-size: 55px;
+    padding-top: 30px;
 }
 
 h2{
@@ -22,12 +22,19 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 5px;
     padding: 20px;
+    padding-left: 35px;
     font-size: 15px;
-    border-bottom: solid 3px black;
+    border-bottom: solid 1px #938ebb;
 }
 
 .footer__content{
     background-color:#ded5f0;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 30px;
+    color: #938ebb;
 }

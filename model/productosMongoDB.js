@@ -48,9 +48,9 @@ class ProductoModelMongoDB {
             const productoSave = new ProductoModel(producto)
             await productoSave.save()
 
-            let productos = await ProductoModel.find({})
+            let productos = await ProductoModel.find({}).lean()
             let productoGuardado = productos[productos.length-1]
-            return productoGuardado
+            return DB_Mongo.genIdKey (productoGuardado)
         }
         catch(error) {
             console.log(`Error en createProducto: ${error.message}`)
@@ -63,12 +63,12 @@ class ProductoModelMongoDB {
         if(!DB_Mongo.conexionOk) return []
 
         try {
-            let productos = await ProductoModel.find({})
-            return productos
+            let productos = await ProductoModel.find({}).lean()
+            return DB_Mongo.genIdKey(productos)
         }
         catch(error) {
             console.log(`Error en readProductos: ${error.message}`)
-            return []
+            return {}
         }
     }
 
@@ -77,11 +77,7 @@ class ProductoModelMongoDB {
         if(!DB_Mongo.conexionOk) return {}
 
         try {
-            //let producto = await ProductoModel.find({_id:id})
-            //console.log(producto)
-            //return producto[0]
-
-            let producto = await ProductoModel.findOne({_id:id})
+            let producto = await ProductoModel.findOne({_id:id}).lean()
             return producto
         }
         catch(error) {
@@ -97,8 +93,8 @@ class ProductoModelMongoDB {
         try {
             await ProductoModel.updateOne({_id:id},{$set: producto})
 
-            let productoActualizado = await ProductoModel.findOne({_id:id})
-            return productoActualizado
+            let productoActualizado = await ProductoModel.findOne({_id:id}).lean()
+            return DB_Mongo.genIdKey(productoActualizado)
         }
         catch(error) {
             console.log(`Error en updateProducto: ${error.message}`)
@@ -111,8 +107,10 @@ class ProductoModelMongoDB {
         if(!DB_Mongo.conexionOk) return {}
         
         try {
+            let productoBorrado = await ProductoModel.findOne({_id:id}).lean()
             await ProductoModel.deleteOne({_id:id})
-            return 'ok deleteProducto'
+
+            return DB_Mongo.genIdKey(productoBorrado)
         }
         catch(error) {
             console.log(`Error en deleteProducto: ${error.message}`)

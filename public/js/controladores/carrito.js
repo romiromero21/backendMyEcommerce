@@ -12,11 +12,11 @@ class CarritoController extends CarritoModel {
     }
 
     elProductoEstaEnElCarrito(producto) {
-        return this.carrito.filter(prod => prod._id == producto._id).length
+        return this.carrito.filter(prod => prod.id == producto.id).length
     }
     
     obtenerProductoDeCarrito(producto) {
-        return this.carrito.find(prod => prod._id == producto._id)
+        return this.carrito.find(prod => prod.id == producto.id)
     }
     
     agregarAlCarrito(producto) {
@@ -34,7 +34,7 @@ class CarritoController extends CarritoModel {
     }
     
     async borrarProductoCarrito(id) {
-        let index = this.carrito.findIndex(producto => producto._id == id)
+        let index = this.carrito.findIndex(producto => producto.id == id)
         this.carrito.splice(index,1)
         localStorage.setItem('carrito', JSON.stringify(this.carrito))
     

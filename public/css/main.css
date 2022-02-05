@@ -207,26 +207,32 @@ body {
 .nav-bar {
   background-color: #f2f2f2;
   width: auto;
-  padding: auto;
+  padding: 14px 20px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .nav-bar__nav-list {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  color: #fff;
+  justify-content: left;
+  color: #f2f2f2;
 }
 
 .nav-bar__nav-item {
   text-align: center;
   background-color: #f2f2f2;
-  text-transform: uppercase;
+  line-height: 20px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  position: relative;
+  display: block;
+  text-decoration: underline;
 }
 
 .nav-bar__nav-link {
   display: block;
+  justify-content: left;
   background-color: #f2f2f2;
   padding: 1em 2.5em;
   text-decoration: none;
@@ -261,25 +267,25 @@ body {
 }
 
 .search-bar__form-label {
-  width: 25%;
+  width: 60%;
   color: white;
   font-family: "Italianno", cursive;
-  font-size: 25px;
-  text-align: right;
+  font-size: 35px;
+  text-align: center;
   padding-right: 6px;
 }
 
 .search-bar__form-search {
   background-color: #ded5f0;
-  width: 30%;
-  height: 30px;
-  border-radius: 5px;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px #fff;
 }
 
 .search-bar__form-submit {
   background-color: #ded5f0;
-  height: 30px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 5px #fff;
   font-family: "Italianno", cursive;
   font-size: 25px;
 }
@@ -407,10 +413,11 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
-  padding: 20px;
+  padding: 10px;
   padding-left: 35px;
   font-size: 15px;
   border-bottom: solid 1px #938ebb;
+  color: #938ebb;
 }
 
 .footer__content {
@@ -419,8 +426,21 @@ h2 {
 
 .footer-copyright {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #938ebb;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.login {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  color: #938ebb;
+  margin: 0px 5px;
 }
 
 .section-nosotros {

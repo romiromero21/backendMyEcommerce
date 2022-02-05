@@ -23,10 +23,11 @@ h2{
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
-    padding: 20px;
+    padding: 10px;
     padding-left: 35px;
     font-size: 15px;
     border-bottom: solid 1px #938ebb;
+    color: #938ebb
 }
 
 .footer__content{
@@ -35,6 +36,19 @@ h2{
 
 .footer-copyright{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #938ebb;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.login{
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: #938ebb;
+    margin: 0px 5px;
 }

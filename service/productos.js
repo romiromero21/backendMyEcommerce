@@ -6,7 +6,7 @@ import config from '../config.js'
 
 import ProductoModel from '../model/productos.js'
 
-const model = ProductoModel.get(config.TIPO_DE_PERSISTENCIA)
+const model = ProductoModel.get(config.TIPO_DE_PERSISTENCIA_PRODUCTOS)
 
 const obtenerProducto = async id => {
     let producto = await model.readProducto(id)

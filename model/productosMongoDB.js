@@ -1,6 +1,6 @@
 /* https://mongoosejs.com/ */
 import mongoose from 'mongoose'
-import config from '../config.js'
+import DB_Mongo from './DB_Mongo.js'
 
 /* ------------------------------------------------------------- */
 /* Esquema del documento producto */
@@ -41,7 +41,8 @@ class ProductoModelMongoDB {
     // -----------------------------------------------------------------------------------
     /* CRUD -> C : Create -> http method POST */
     async createProducto(producto) {
-        if(!ProductoModelMongoDB.conexionOk) return {}
+        if(!DB_Mongo.conexionOk) return {}
+
 
         try {
             const productoSave = new ProductoModel(producto)
@@ -59,7 +60,7 @@ class ProductoModelMongoDB {
 
     /* CRUD -> R : Read ALL -> http method GET */
     async readProductos() {
-        if(!ProductoModelMongoDB.conexionOk) return []
+        if(!DB_Mongo.conexionOk) return []
 
         try {
             let productos = await ProductoModel.find({})
@@ -73,7 +74,7 @@ class ProductoModelMongoDB {
 
     /* CRUD -> R : Read ONE -> http method GET */
     async readProducto(id) {
-        if(!ProductoModelMongoDB.conexionOk) return {}
+        if(!DB_Mongo.conexionOk) return {}
 
         try {
             //let producto = await ProductoModel.find({_id:id})
@@ -91,7 +92,7 @@ class ProductoModelMongoDB {
 
     /* CRUD -> U : Update -> http method PUT */
     async updateProducto(id,producto) {
-        if(!ProductoModelMongoDB.conexionOk) return {}
+        if(!DB_Mongo.conexionOk) return {}
 
         try {
             await ProductoModel.updateOne({_id:id},{$set: producto})
@@ -107,7 +108,7 @@ class ProductoModelMongoDB {
 
     /* CRUD -> D : Delete -> http method DELETE */
     async deleteProducto(id) {
-        if(!ProductoModelMongoDB.conexionOk) return {}
+        if(!DB_Mongo.conexionOk) return {}
         
         try {
             await ProductoModel.deleteOne({_id:id})

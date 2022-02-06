@@ -227,10 +227,10 @@ body {
 }
 
 .payment-form .title {
-  font-size: 1em;
+  font-size: 1.3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 0.8em;
-  font-weight: 400;
+  font-weight: bold;
   padding-bottom: 8px;
 }
 
@@ -262,7 +262,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   padding-top: 19px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1;
 }
 

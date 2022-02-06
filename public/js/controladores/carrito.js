@@ -48,7 +48,7 @@ class CarritoController extends CarritoModel {
         this.carrito = []
         localStorage.setItem('carrito',this.carrito)
     
-        elemSectionCarrito.innerHTML = '<h2>Enviando carrito... <b>OK!</b></h2>'
+        elemSectionCarrito.innerHTML = '<h2>Información de Compra Enviada...</h2>'
     
         setTimeout( async () => {
             elemSectionCarrito.classList.remove('section-carrito--visible')

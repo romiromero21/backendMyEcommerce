@@ -44,16 +44,20 @@ class CarritoController extends CarritoModel {
     async enviarCarrito() {
         var elemSectionCarrito = document.getElementsByClassName('section-carrito')[0]
         elemSectionCarrito.innerHTML = '<h2>Enviando carrito...</h2>'
-        await carritoService.guardarCarritoService(this.carrito)
+        const preference = await carritoService.guardarCarritoService(this.carrito)
         this.carrito = []
         localStorage.setItem('carrito',this.carrito)
     
         elemSectionCarrito.innerHTML = '<h2>Enviando carrito... <b>OK!</b></h2>'
     
-        setTimeout(() => {
+        setTimeout( async () => {
             elemSectionCarrito.classList.remove('section-carrito--visible')
             mostrarCarrito = false
-        },1500)
+
+            console.log(preference)
+            await renderPago(preference)
+
+        },0)
     }
 }
 

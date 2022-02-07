@@ -305,6 +305,100 @@ body {
   cursor: pointer;
 }
 
+.container-alta {
+  padding: 10px;
+  /* img {
+      display: block;
+      margin: 0 auto;
+  } */
+}
+.container-alta h1 {
+  color: blue;
+}
+.container-alta form button {
+  display: block;
+  margin-top: 20px;
+  width: 80px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container-alta table button {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container-alta input[type=checkbox] {
+  display: inline;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+.container-alta div, .container-alta input.data-validation {
+  width: 300px;
+  display: block;
+  margin-bottom: 1px;
+  padding: 5px;
+}
+.container-alta form div.mensaje-validacion {
+  border: 1px solid red;
+  background-color: yellow;
+  color: darkred;
+  margin: 2px 0 10px 0;
+  border-radius: 5px;
+  display: none;
+}
+.container-alta table, .container-alta th, .container-alta td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.container-alta table {
+  width: 90%;
+}
+.container-alta #listado-productos {
+  width: 100%;
+}
+.container-alta th, .container-alta td {
+  padding: 5px;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 300px;
+  margin: 25px 0;
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 1px solid #ccc;
+}
+
+#foto {
+  display: none;
+}
+
+#gallery img {
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#drop-area.highlight {
+  border-color: purple;
+}
+
 /*********************************
             HEADER
 *********************************/

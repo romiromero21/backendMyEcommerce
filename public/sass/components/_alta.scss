@@ -1,0 +1,109 @@
+.container-alta {
+    padding: 10px;
+    
+    h1 {
+        color: blue;
+    }
+
+    
+
+    form button {
+        display: block;
+        margin-top: 20px;
+        width: 80px;
+        height: 35px;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    table button {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 100px;
+        height: 35px;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    input[type="checkbox"] {
+        display: inline;
+        width: 15px;
+        height: 15px;
+        margin-top: 10px;
+    }
+
+    div, input.data-validation {
+        width: 300px;
+        display: block;
+        margin-bottom: 1px;
+        padding: 5px;
+    }
+
+    form div.mensaje-validacion {
+        border: 1px solid red;
+        background-color: yellow;
+        color: darkred;
+        margin: 2px 0 10px 0;
+        border-radius: 5px;
+        display: none;        
+    }
+
+    table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    #listado-productos {
+        width: 100%;
+    }
+
+    th,td {
+        padding: 5px;
+    }
+
+    /* img {
+        display: block;
+        margin: 0 auto;
+    } */
+    
+}
+
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 300px;
+    margin: 25px 0;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 1px solid #ccc;
+}
+
+#foto {
+    display: none;
+}
+
+#gallery img {
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#drop-area.highlight {
+    border-color: purple;
+}
+

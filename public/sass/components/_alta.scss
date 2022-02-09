@@ -74,12 +74,11 @@
     
 }
 
-
 #drop-area {
     border: 2px dashed #ccc;
     border-radius: 20px;
     width: 300px;
-    margin: 25px 0;
+    margin: 10px auto;
     padding: 20px;
 }
 
@@ -107,3 +106,30 @@
     border-color: purple;
 }
 
+#form-alta {
+    background-color: #ded5f0;
+    border: solid #938EBB;
+    margin: 25px 10%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-alta__container {
+    margin: 15px auto;
+    display: block;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 90%;
+
+}
+
+
+.label_envio {
+    margin-left: 50px;
+}
+
+.boton_alta {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}

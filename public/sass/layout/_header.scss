@@ -24,7 +24,7 @@
 .nav-bar {
     background-color: #f2f2f2;
     width: auto;
-    padding: 14px 20px;
+    padding: 14px 10px;
     font-weight: bold;
     font-size: 15px;
 }
@@ -94,22 +94,30 @@
     font-size: 35px;
     text-align: center;
     padding-right: 6px;
+    
 }
 
 .search-bar__form-search {
-    background-color: #ded5f0;
-    width: 40%;
-    height: 40px;
-    border-radius: 5px #fff;
+    background-color: #fff;
+    width: 60%;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px #fff;
+    
 }
 
 .search-bar__form-submit {
     background-color: #ded5f0;
-    height: 40px;
-    border-radius: 5px #fff;
+    color: #fff;
+    height: 30px;
+    border-radius: 20px #fff;
     font-family:'Italianno', cursive;
     font-size: 25px;
+    border: none;
+    margin-left: 5px;
 }
+
+
 
 .search-bar__carrito-container {
     flex: 0 0 3em;
@@ -156,7 +164,7 @@
 .menu-toggle__medallon,
 .menu-toggle__pan-abajo {
     display: block;
-    background-color: #ded5f0;
+    background-color: #938ebb;
     height: .2em;
     position: absolute;
     left: .5em;

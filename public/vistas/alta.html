@@ -6,24 +6,24 @@
     <form id="form-alta" autocomplete="off" class="form-alta">
 
         <!-- Campo Nombre -->
-        <label for="nombre">Nombre:</label>
-        <input id="nombre_producto" class="data-validation" name="nombre">
+        <input class="form-alta__container" id="nombre_producto" class="data-validation" name="nombre"
+            placeholder="Nombre">
         <div class="mensaje-validacion"></div>
 
         <!-- Campo Precio -->
-        <label for="precio">Precio:</label>
-        <input type="text" id="precio_producto"class="data-validation" name="precio">
+        <input class="form-alta__container" type="text" id="precio_producto" class="data-validation" name="precio"
+            placeholder="Precio">
         <div class="mensaje-validacion"></div>
 
         <!-- Campo Stock -->
-        <label for="stock">Stock:</label>
-        <input type="text" id="stock_producto" class="data-validation" name="stock">
+        <input class="form-alta__container" type="text" id="stock_producto" class="data-validation" name="stock"
+            placeholder="Stock">
         <div class="mensaje-validacion"></div>
 
         <!-- Campo Foto -->
         <!-- <label for="foto">Foto:</label>
-            <input type="text" id="foto_producto" name="foto">
-            <div></div> -->
+                <input type="text" id="foto_producto" name="foto">
+                <div></div> -->
 
         <div id="drop-area">
             <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>drag and drop</b> dentro del área punteada</p>
@@ -39,21 +39,22 @@
         </div>
 
         <!-- Campo Categoria -->
-        <label for="categoria">Categoría:</label>
-        <input type="text" id="nombre_categoria" class="data-validation" name="categoria">
+        <input class="form-alta__container" type="text" id="nombre_categoria" class="data-validation" name="categoria"
+            placeholder="Categoria">
         <div class="mensaje-validacion"></div>
 
         <!-- Campo Detalle -->
-        <label for="detalle">Detalle:</label>
-        <input type="text" id="detalle_producto" class="data-validation" name="detalle">
+        <input class="form-alta__container" type="text" id="detalle_producto" class="data-validation" name="detalle"
+            placeholder="Detalle">
         <div class="mensaje-validacion"></div>
 
         <!-- Campo Envio -->
-        <input type="checkbox" id="envio_producto" class="data-validation" name="envio">
-        <label for="envio">Envío sin cargo</label>
+        <div class="label_envio">
+            <input type="checkbox" id="envio_producto" class="data-validation" name="envio">
+            <label for="envio">Envío sin cargo</label>
+        </div>
+        <button class="boton_alta"> Dar de alta</button>
 
-        <button> Dar de alta</button>
-        <!-- <button class="submit" type="reset" value="Restablecer el formulario">Restablecer el formulario </button> -->
 
     </form>
     <h1>Listado Productos</h1>
